@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "f7c542bd-44ff-4bea-b145-a6f105fa4d2d",
+		"name": "msg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://tt.xiaolinzi.net.cn/set.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "用户1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/set.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"set.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/set.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "用户1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/set.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"set.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/set.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "用户3",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/set.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"set.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/set.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "用户2",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/set.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"set.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/get.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/get.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tt.xiaolinzi.net.cn/set.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "用户1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tt.xiaolinzi.net.cn/set.php",
+					"protocol": "http",
+					"host": [
+						"tt",
+						"xiaolinzi",
+						"net",
+						"cn"
+					],
+					"path": [
+						"set.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
