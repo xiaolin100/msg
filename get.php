@@ -3,7 +3,7 @@ header('Content-type:text/html;charset=utf-8');
 require_once 'db.php';
 $db = db::instance();
 $return = array('code' => 1, 'msg' => 'success', 'data' => array());
-$limit = isset($_GET['limit']) ? intval($_GET['limit']) : 10;  //条数限制
+$limit = isset($_GET['limit']) ? intval($_GET['limit']) : 2;  //条数限制
 $direction = isset($_GET['direction']) && $_GET['direction'] == 'old' ? 'old' : 'new'; //方向 new获取最新，old获取以前数据
 
 if($direction == 'new'){
