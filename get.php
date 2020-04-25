@@ -17,7 +17,7 @@ if($direction == 'new'){
     if($minId<=0){
         $minId = 0;
     }
-    $sql = "select id,title,content from msg where id < ".$minId." order by create_time asc limit 0, ".$limit;
+    $sql = "select id,title,content from msg where id < ".$minId." order by create_time desc limit 0, ".$limit;
 }
 
 $list = $db->connect()->findAll($sql);
