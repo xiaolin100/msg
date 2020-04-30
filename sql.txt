@@ -1,0 +1,38 @@
+统计Name为6007的衣服的总销量
+select
+	sum(detail.Quantity) as Quantity
+from
+	t_product as p
+	inner join t_orderdetail as detail on p.ProdId = detail.Prodid
+where
+	p.Name = '6007'
+
+
+
+
+统计Name为6007的衣服且颜色代码为311的衣服的总销量
+select
+	sum(detail.Quantity) as Quantity
+from
+	t_product as p
+	inner join t_orderdetail as detail on p.ProdId = detail.Prodid
+	inner join t_color as c on detail.ColorID = c.ColorID
+where
+	p.Name = '6007'
+	and c.Name = '311'
+
+
+
+
+统计每种Name的衣服销量最好的颜色分别是什么
+select
+	MAX(detail.Quantity) as Quantity,
+	p.Name as ProNmae,
+	c.Name as ColorName
+from
+	t_product as p
+	inner join t_orderdetail as detail on p.ProdId = detail.Prodid
+	inner join t_color as c on detail.ColorID = c.ColorID
+Group by
+	detail.ProdId,
+	detail.ColorID

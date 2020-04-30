@@ -24,11 +24,17 @@ class db{
     public function connect()
     {
         if(!$this->handle){
-            $dsn = "mysql:host=".$this->conf['host'].';port='.$this->conf['port'].';dbname='.$this->conf['db'];
-            $user = $this->conf['user'];
-            $password = $this->conf['password'];
-            $this->handle = new PDO($dsn,$user,$password);
-            $this->handle->exec('SET NAMES UTF8');
+            try{
+                $dsn = "mysql:host=".$this->conf['host'].';port='.$this->conf['port'].';dbname='.$this->conf['db'];
+                $user = $this->conf['user'];
+                $password = $this->conf['password'];
+                $this->handle = new PDO($dsn,$user,$password);
+                $this->handle->exec('SET NAMES UTF8');
+            }catch (Exception $e){
+                echo $e->getMessage();
+                exit();
+            }
+
         }
         return $this;
     }
@@ -82,5 +88,22 @@ class db{
         }
         $data = $sth->fetchAll(PDO::FETCH_ASSOC);
         return $data;
+    }
+
+    public function findRow($sql)
+    {
+        $this->sql = $sql;
+        $this->setDebug($this->sql);
+        $sth = $this->handle->query($sql);
+        if($sth === false){
+            $this->setDebug($this->handle->errorInfo());
+            return false;
+        }
+        $data = $sth->fetchAll(PDO::FETCH_ASSOC);
+        if(empty($data)){
+            return $data[0];
+        } else {
+            return [];
+        }
     }
 }

@@ -1,8 +1,8 @@
 <?php
 return [
-    'host' => 'localhost',
-    'port' => '3306',
-    'user' => 'test',
-    'password' => 'test',
-    'db' => 'test',
+    'host' => 'moon.metgs.com',
+    'port' => '3307',
+    'user' => 'mreader',
+    'password' => 'reader_moon',
+    'db' => 'oldb_new',
 ];
