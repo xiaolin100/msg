@@ -23,11 +23,3 @@ $("#get_list").on('click',function () {
     });
 });
 
-$("#get6007").on('click',function () {
-    $.get('product.php',{'action':'getName'},function (data) {
-        if(typeof data == 'string'){
-            data = JSON.parse(data);
-        }
-        $("#6007").empty().append(data.data);
-    });
-});
